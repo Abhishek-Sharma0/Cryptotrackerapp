@@ -2,7 +2,6 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useContext,useState,useEffect } from 'react';
 import { mycontext } from '../Maincontext';
-import { SingleCoin } from '../config/endpoints';
 import { numberWithCommas } from '../ComponentsofHome/Carousel';
 import axios from 'axios';
 import "../allcss/coindescription.css"
@@ -12,7 +11,7 @@ import { db } from '../firebas';
 import { doc, setDoc } from 'firebase/firestore';
 const Coindiscription = () => {
   const { id } = useParams();
-  const { currency, setcurrency, symbol,user,watchlist,} = useContext(mycontext);
+  const { currency, symbol,user,watchlist,} = useContext(mycontext);
   const [singlecoininfo, setsinglecoininfo] = useState();
   const [flag,setflag] = useState(false);
   
@@ -25,7 +24,9 @@ const Coindiscription = () => {
   const coinexist = watchlist.includes(singlecoininfo?.id);
   useEffect(()=>{fetchsiglecoin()},[])
   console.log(singlecoininfo);
-
+  //here we are creating refernce in firebase db called docref with inside watchlist folder we have document for every user withhis specific userid
+  //we wiil use setDoc function which requires docref and value to be set we are storing object with key coins and keep on adding all coins which 
+  //will be added to watchlist
   async function addtowatchlist(){
     const docref=doc(db,"watchlist",user.uid);
     try{

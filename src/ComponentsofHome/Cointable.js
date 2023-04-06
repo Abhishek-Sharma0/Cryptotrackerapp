@@ -1,10 +1,8 @@
 import React from 'react'
-import { CoinList } from '../config/endpoints'
 import { useState, useEffect, useContext } from 'react'
-import axios from 'axios';
 import { mycontext } from '../Maincontext';
 import { Container, TextField, Typography } from '@material-ui/core';
-import { withStyles, makeStyles, ThemeProvider,createTheme } from '@material-ui/core/styles';
+import { makeStyles, ThemeProvider,createTheme } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -47,6 +45,8 @@ const Cointable = () => {
           type: "dark",
         },
       });
+
+      //this function will pass whole coinlist if u have not entered any but if u entered based on value of name and id it will search
     
     function handlechange() {
         return coinlist.filter((coin) => {
@@ -118,9 +118,11 @@ const Cointable = () => {
             justifyContent: "center",
           }}
           classes={{ ul: classes.pagination }}
-          onChange={(_, value) => {
+          // the first parameter (represented by an underscore) is an event object that is automatically passed by the React framework when the event is triggered. The underscore is used as a placeholder variable name to indicate that the event object is not being used by the event handler.
+          onChange={(_, value) => {  
             setPage(value);
             window.scroll(0, 450);
+            //code will scroll the window vertically to the position of 450 pixels from the top of the document. means it will take to starting of table
           }}
         />
         </Container>

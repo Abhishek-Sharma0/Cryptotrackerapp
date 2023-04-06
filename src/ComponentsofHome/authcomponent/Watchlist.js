@@ -3,13 +3,12 @@ import { mycontext } from '../../Maincontext';
 import { useContext } from 'react';
 import { numberWithCommas } from '../Carousel';
 import { AiFillDelete } from "react-icons/ai";
-import { icons } from 'react-icons';
 import { db } from '../../firebas';
 import { doc } from 'firebase/firestore';
 import { setDoc } from 'firebase/firestore';
 import "../../allcss/sidebar.css"
 const Watchlist = () => {
-  const { currency, setcurrency, symbol,user,watchlist,coinlist} = useContext(mycontext);
+  const { symbol,user,watchlist,coinlist} = useContext(mycontext);
   async function Removefromwatchlist(coin){
     const docref=doc(db,"watchlist",user.uid);
     try{

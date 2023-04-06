@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { mycontext } from '../Maincontext';
-import { elemecoins, TrendingCoins } from '../config/endpoints';
+import { TrendingCoins } from '../config/endpoints';
 import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../allcss/causrosel.css"
@@ -12,7 +12,7 @@ export function numberWithCommas(x) {
 }
 
 const Carousel = () => {
-    const { currency, setcurrency, symbol } = useContext(mycontext);
+    const { currency, symbol } = useContext(mycontext);
     const [trending, settrending] = useState([]);
     const trendingfetch = async () => {
         const { data } = await axios.get(TrendingCoins(currency));

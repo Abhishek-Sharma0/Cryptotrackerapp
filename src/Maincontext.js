@@ -42,7 +42,6 @@ const Maincontext = ({children}) => {
         //Whenever there is a change to the "watchlist" document for the current user, the onSnapshot function will execute the callback function with a snapshot of the updated document. The coin parameter in the callback function will contain the updated document snapshot.
         const unsubscribe = onSnapshot(coinRef, (coin) => {
           if (coin.exists()) {
-            console.log(coin.data().coins);
             setwatchlist(coin.data().coins);
           } else {
             console.log("No Items in Watchlist");

@@ -33,6 +33,7 @@ const Coinchart = ({ singlecoininfo }) => {
     ) : (
       <>
         <Line
+        //here labels means x axis value if days are less than 1 than time will be setin lables otherwise date
           data={{
             labels: historicalchartinfo.map((coin) => {
               let date = new Date(coin[0]);
@@ -42,6 +43,7 @@ const Coinchart = ({ singlecoininfo }) => {
                   : `${date.getHours()}:${date.getMinutes()} AM`;
               return days === 1 ? time : date.toLocaleDateString();
             }),
+            //datasets refers to yaxis and label here is used to give details about y axis
             datasets: [
               {
                 data: historicalchartinfo.map((coin) => coin[1]),
@@ -50,6 +52,7 @@ const Coinchart = ({ singlecoininfo }) => {
               },
             ],
           }}
+          //the point property is used to customize the appearance of the points on the line chart. Specifically, the radius property is being set to 1, which will make the points very small and barely visible.
           options={{
             elements: {
               point: {

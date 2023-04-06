@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "../../allcss/Modal.css"
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword  } from 'firebase/auth';
 import { auth } from '../../firebas';
-
 import GoogleButton from 'react-google-button';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { signInWithPopup } from 'firebase/auth';
@@ -29,7 +28,7 @@ const Login = ({handleClose}) => {
         console.log("success login");
         }
         else{
-            console.log("error login");
+            alert("enter valid credentials");
         }
     }
     async function loginwithgoogle(){
