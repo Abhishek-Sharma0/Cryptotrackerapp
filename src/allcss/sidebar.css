@@ -1,0 +1,27 @@
+.item{
+    display: flex;gap:15px;
+        width: 90%;height: 40px;background-color: gold;
+        color: white;font-size: 16px;align-items: center;
+        padding-left: 10px;
+        margin: 25px auto;
+        border-radius: 5px;
+}
+
+.watchlistcontainer{
+    overflow-y: scroll;
+    background-color: gray;
+    height: 60%;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+@media (max-width: 500px) {
+    .makeStyles-root-38 {
+       
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .makeStyles-app-30{
+        width: 100%;
+    }
+}

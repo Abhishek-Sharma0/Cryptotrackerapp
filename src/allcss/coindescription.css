@@ -1,0 +1,139 @@
+*{
+    margin: 0;padding: 0;
+}
+.maindiv{
+    margin: 3%;
+    display: flex;
+}
+.infoimg{
+    width: 170px;
+}
+.sidediv{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 2px solid gray;
+}
+.chartdiv{
+    width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 25;
+      padding: 40px 10px;
+      height: 80vh;
+}
+.button{
+    flex-wrap: wrap;
+}
+.chart{
+    height: 50vh !important;
+    padding: 30px;
+    color: white;
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.alignstart{
+    align-self: flex-start;
+    font-size: 22px;
+    font-weight: 500;
+}
+.fl{
+    font-size: 22px;
+    font-weight: 800;
+}
+.sm{
+    font-size: 21px;
+    font-weight: 500;
+}
+.nrmbutton {
+    width: 120px !important;
+    height: 50px;
+}
+.nrmbutton:hover{
+    background-color:  rgba(241, 207, 11, 0.959) !important;
+    color: black;
+    border: 2px solid black;
+}
+@media (max-width: 900px) {
+    .maindiv{
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+    }
+    .sidediv{
+        padding: 30px;
+        width: 90%;
+        gap: 20px;
+        border-right: none;
+        margin: auto;
+    }
+    .chartdiv{
+        width: 95%;
+          gap: 60px;
+          margin: auto;
+          height: 500px;
+          height: 50vh;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .alignstart{
+        font-size: 18px;
+    }
+    .fl{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .sm{
+        font-size: 17.5px;
+        font-weight: 500;
+    }
+    .button{
+        width: 60% !important;
+        flex-wrap: nowrap;
+        height: 5vh !important;
+        gap: 20px;
+    }
+    .nrmbutton {
+        width: 80px !important;
+        height: 60px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    .nrmbutton:hover{
+        background-color:  rgba(241, 207, 11, 0.959) !important;
+        color: black;
+    }
+    
+}
+@media (max-width: 500px) {
+    .sidediv{
+        font-size: 16px;
+    }
+    .chartdiv{
+        width: 95%;
+          gap: 60px;
+          margin: auto;
+          height: 40vh;
+    }
+    .button{
+        height: 10vh !important;
+        
+    }
+    .nrmbutton:hover{
+        background-color:  rgba(241, 207, 11, 0.959) !important;
+        color: black;
+    }
+    
+    
+}

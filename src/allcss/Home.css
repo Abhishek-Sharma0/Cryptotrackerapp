@@ -1,0 +1,38 @@
+.topcontent{
+    
+    background-image: url('./banner2.jpg');
+    min-height: 40vh;
+
+}
+
+.insidecontainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    width: 100%;
+
+}
+@media (max-width: 900px) {
+    
+    .MuiTypography-h1{
+        font-size: 4rem !important;
+    }
+    .MuiTypography-h3{
+        font-size: 2rem !important;
+    }
+    
+}
+@media (max-width: 600px) {
+    
+    .MuiTypography-h1{
+        font-size: 3rem !important;
+    }
+    .MuiTypography-h3{
+        font-size: 1.3rem !important;
+    }
+    
+}
