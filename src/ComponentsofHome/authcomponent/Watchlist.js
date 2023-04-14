@@ -28,8 +28,8 @@ const Watchlist = () => {
                     if (watchlist.includes(coin.id))
                       return (
                         <div className="item">
-                          <span style={{width: "60%"}}>{coin.name}</span>
-                          <span style={{ display: "flex", justifyContent: "space-between" ,width: "32%",fontSize: "15px"}}>
+                          <span style={{width: "60%"}} id='wid60'>{coin.name}</span>
+                          <span style={{ display: "flex", justifyContent: "space-between" ,width: "32%",fontSize: "15px"}} id='widprice'>
                             {symbol}{" "}
                             {numberWithCommas(coin.current_price.toFixed(0))}
                             <AiFillDelete

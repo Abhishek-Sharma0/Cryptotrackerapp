@@ -15,6 +15,15 @@ input{
     background-color: rgb(61, 55, 55);
     color: white;
 }
+#loginclickbtn{
+    position: absolute !important;
+    top: 67px !important;
+    right: -10px;
+
+}
+.makeStyles-app-67{
+    height: 160px;
+}
 button{
     border-radius: 5px;
     background-color: gold;

@@ -24,4 +24,32 @@
     .makeStyles-app-30{
         width: 100%;
     }
+    .jss40 {
+        width: 329px;
+        height: 100%;
+        display: flex;
+        padding: 0px;
+        font-family: monospace;
+        flex-direction: column;
+    }
+    #wid60{
+        width: 42% !important;
+    }
+    #widprice{
+        width: max-content !important;
+        gap: 10px !important;
+    }
+    .makeStyles-container-58{
+        width: 300px !important;
+    }
+    .watchlistcontainer{
+        width: 300px !important;
+        align-self: center;
+    }
+    #draw{
+        width: 380px !important;
+    }
+    .makeStyles-container-125{
+        width: 285px !important;
+    }
 }

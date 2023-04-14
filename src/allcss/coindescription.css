@@ -128,6 +128,8 @@ h1{
     }
     .button{
         height: 10vh !important;
+        flex-wrap: wrap;
+        width: 70% !important;
         
     }
     .nrmbutton:hover{

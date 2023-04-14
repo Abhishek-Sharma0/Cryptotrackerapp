@@ -5,6 +5,7 @@ import { mycontext } from '../Maincontext';
 import TransitionsModal from './Modal';
 import Profile from './authcomponent/Profile';
 import Sidebar from './authcomponent/Sidebar';
+import "../allcss/Header.css";
 const Header = () => {
     const { currency, setcurrency, user } = useContext(mycontext);
     const usestyles = makeStyles(() => ({

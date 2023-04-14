@@ -70,10 +70,10 @@ export default function Sidebar() {
         <div>
             <React.Fragment key="right">
                 
-                <div className={classes.root}>
+                <div className={classes.root} id='root'>
                     <Avatar src={user.photoURL} className={classes.pic} onClick={toggleDrawer("right", true)} id="positioned" />
                 </div>
-                <Drawer anchor="right" open={state["right"]} onClose={toggleDrawer("right", false)}>
+                <Drawer anchor="right" open={state["right"]} onClose={toggleDrawer("right", false)} id="draw">
                     <div className={classes.container}>
                         <div className={classes.profile}>
                         <FiX style={{fontSize: "20px",position: "absolute",top: "15px",right: "15px",zIndex: "200"}} onClick={toggleDrawer("right", false)}/>

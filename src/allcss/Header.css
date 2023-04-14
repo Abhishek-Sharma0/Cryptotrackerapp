@@ -1,0 +1,13 @@
+.jss15{
+    padding: 20px 0 !important;
+}
+.makeStyles-app-29{
+    padding: 20px 0;
+}
+@media (max-width: 400px) {
+    #positioned {
+        position: absolute;
+        top: 51px;
+        right: -28px;
+    }
+}

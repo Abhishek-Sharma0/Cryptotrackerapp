@@ -56,7 +56,7 @@ export default function TransitionsModal() {
                 borderRadius: "10px",
                 border: "2px solid black"
 
-            }}>
+            }} id='loginclickbtn'>
                 Login
             </button>
             <Modal
